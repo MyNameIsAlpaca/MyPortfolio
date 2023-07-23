@@ -44,19 +44,21 @@ export default {
   <div class="background">
     <div class="container-xl main-container">
       <div class="left-section">
-        <div class="image-container">
-          <img src="/img/curriculum_foto_def.jpg" alt="Immagine di profilo">
+        <div class="left-section-container">
+          <div class="image-container">
+            <img src="/img/curriculum_foto_def.jpg" alt="Immagine di profilo">
+          </div>
+          <h3 class="pt-3"><em>Conoscenze:</em></h3>
+          <swiper :grabCursor="true" :effect="'creative'" :creativeEffect="{ prev: { shadow: true, translate: [0, 0, -400],}, next: { translate: ['100%', 0, 0],},}" :modules="modules" class="mySwiper">
+            <swiper-slide><i class="fa-brands fa-html5"></i><span class="swiper_name">Html</span> <em class="swipe_arrow">swipe <i class="fa-solid fa-arrow-right"></i></em></swiper-slide>
+            <swiper-slide><i class="fa-brands fa-css3-alt"></i><span class="swiper_name">Css</span></swiper-slide>
+            <swiper-slide><i class="fa-brands fa-js"></i><span class="swiper_name">Javascript</span></swiper-slide>
+            <swiper-slide><i class="fa-brands fa-bootstrap"></i><span class="swiper_name">Bootstrap</span></swiper-slide>
+            <swiper-slide><i class="fa-brands fa-vuejs"></i><span class="swiper_name">VueJs</span></swiper-slide>
+            <swiper-slide><i class="fa-brands fa-php"></i><span class="swiper_name">Php</span></swiper-slide>
+            <swiper-slide><i class="fa-brands fa-laravel"></i><span class="swiper_name">Laravel</span></swiper-slide>
+          </swiper> 
         </div>
-        <h3 class="pt-3"><em>Conoscenze:</em></h3>
-        <swiper :grabCursor="true" :effect="'creative'" :creativeEffect="{ prev: { shadow: true, translate: [0, 0, -400],}, next: { translate: ['100%', 0, 0],},}" :modules="modules" class="mySwiper">
-          <swiper-slide><i class="fa-brands fa-html5"></i><span class="swiper_name">Html</span> <em class="swipe_arrow">swipe <i class="fa-solid fa-arrow-right"></i></em></swiper-slide>
-          <swiper-slide><i class="fa-brands fa-css3-alt"></i><span class="swiper_name">Css</span></swiper-slide>
-          <swiper-slide><i class="fa-brands fa-js"></i><span class="swiper_name">Javascript</span></swiper-slide>
-          <swiper-slide><i class="fa-brands fa-bootstrap"></i><span class="swiper_name">Bootstrap</span></swiper-slide>
-          <swiper-slide><i class="fa-brands fa-vuejs"></i><span class="swiper_name">VueJs</span></swiper-slide>
-          <swiper-slide><i class="fa-brands fa-php"></i><span class="swiper_name">Php</span></swiper-slide>
-          <swiper-slide><i class="fa-brands fa-laravel"></i><span class="swiper_name">Laravel</span></swiper-slide>
-        </swiper> 
       </div>
       <div class="right-section">
         <h1>Gabriele Saragosa</h1>
@@ -85,6 +87,11 @@ export default {
     width: 50%;
     height: calc(100vh - 70px);
     flex-direction: column;
+    .left-section-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     .image-container{
       width: 200px;
       img{
@@ -215,6 +222,14 @@ export default {
 }
 
 @media screen and (max-width: 600px) {
+
+  .left-section{
+    display: flex;
+    align-items: end;
+    .swiper{
+      margin: 0;
+    }
+  }
   .main-container{
     padding-left: 50px;
   }
@@ -223,7 +238,7 @@ export default {
       font-size: 2em;
     }
     span{
-      font-size: 1.5em;
+      font-size: 1em;
     }
   }
 }

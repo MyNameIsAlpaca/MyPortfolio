@@ -136,6 +136,10 @@ export default {
 }
 
 @media screen and (max-width: 992px) {
+
+  .left-nav, .right-nav{
+    display: none;
+  }
   .nav{
     width: 120px;
     height: 100vh;

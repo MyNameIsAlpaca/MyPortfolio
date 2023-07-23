@@ -20,7 +20,7 @@ export default {
 
 <template>
   <div class="background">
-    <div class="container">
+    <div class="container-lg">
       <div class="main-container">
         <div class="change-text">
           <h4 class="wordCarousel">
@@ -34,22 +34,26 @@ export default {
               </div>
           </h4>
         </div>
-        <div class="title-container">
-          <h1>
-            <span>Who&nbsp;</span>
-            <span>Is&nbsp;</span>
-            <span>Gabriele</span>
-            <span>?</span>
-          </h1>
+        <div class="info">
+          <div class="title-container">
+            <h1>
+              <span>Who&nbsp;</span>
+              <span>Is&nbsp;</span>
+              <span>Gabriele</span>
+              <span>?</span>
+            </h1>
+          </div>
+          <div class="desc">
+            <span>Nato il 3 maggio 1998 nella provincia di sondrio ho sempre avuto una passione innata per la tecnologia, in particolare per l'informatica. 
+            </span>
+            <span>
+              Ho sempre tenuto questa mia passione come un semplice hobby da coltivare e migliorare nel tempo libero ma il mio sogno è quello di portare questa mia passione in un ambito lavorativo dove poter crescere e migliorare giorno dopo giorno.
+            </span>
+            <span>Ciò che mi affascina maggiormente della programmazione è il suo carattere dinamico e la sua costante evoluzione, che ti stimola a migliorare sempre di più e ti permette di creare dal nulla progetti sempre più grandi.</span>
+            <span>Uno dei tratti distintivi della mia personalità che preferisco è la <strong>curiosità</strong>, questa continua sete di conoscenza mi spinge ogni giorno a domandarmi cosa c'è dietro ai programmi e siti web che utilizziamo tutti i giorni, quale lavoro è stato fatto per creare e migliorare sempre di più un determinato prodotto.</span>
+            <span>Sperando un giorno di poter prendere anche io parte ad un grande progetto che lascerà il segno.</span>
+          </div>
         </div>
-        <p>Nato il 3 maggio 1998 nella provincia di sondrio ho sempre avuto una passione innata per la tecnologia, in particolare per l'informatica. 
-        </p>
-        <p>
-          Ho sempre tenuto questa mia passione come un semplice hobby da coltivare e migliorare nel tempo libero ma il mio sogno è quello di portare questa mia passione in un ambito lavorativo dove poter crescere e migliorare giorno dopo giorno.
-        </p>
-        <p>Ciò che mi affascina maggiormente della programmazione è il suo carattere dinamico e la sua costante evoluzione, che ti stimola a migliorare sempre di più e ti permette di creare dal nulla progetti sempre più grandi.</p>
-        <p>Uno dei tratti distintivi della mia personalità che preferisco è la <strong>curiosità</strong>, questa continua sete di conoscenza mi spinge ogni giorno a domandarmi cosa c'è dietro ai programmi e siti web che utilizziamo tutti i giorni, quale lavoro è stato fatto per creare e personalizzare sempre di più un determinato prodotto.</p>
-        <p>Sperando un giorno di poter prendere anche io parte ad un grande progetto che lascerà il segno.</p>
       </div>
     </div>
   </div>
@@ -63,13 +67,51 @@ export default {
   .main-container{
     padding-top: 100px;
     height: 100vh;
+    overflow: auto;
+    .desc{
+      padding-top: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 1.5em;
+      span:nth-child(1){
+        opacity: 0;
+        animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      span:nth-child(2){
+        opacity: 0;
+        animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      span:nth-child(3){
+        opacity: 0;
+        animation: fade-in 0.8s 3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      span:nth-child(4){
+        opacity: 0;
+        animation: fade-in 0.8s 4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      span:last-child{
+        opacity: 0;
+        animation: fade-in 0.8s 5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        font-style: italic;
+      }
+      @keyframes fade-in {
+        100% {
+          opacity: 1;
+          filter: blur(0);
+        }
+      }
+    }
+
+
     .title-container{
       h1 {
         transform: scale(0.94);
         animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
         text-align: center;
       }
-  
+
       @keyframes scale {
         100% {
           transform: scale(1);
@@ -97,6 +139,7 @@ export default {
       span:nth-child(4) {
         animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
       }
+
   
       @keyframes fade-in {
         100% {
@@ -181,4 +224,17 @@ export default {
     }
   }
 }
+@media screen and (max-width: 992px) {
+  .background .main-container {
+    .desc{
+      margin: auto;
+      max-width: 80%;
+      padding-left: 100px;
+      font-size: 1em;
+      span{
+    }
+    }
+  }
+}
+
 </style>
