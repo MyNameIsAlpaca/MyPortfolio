@@ -225,7 +225,6 @@ export default {
 
   .left-section{
     display: flex;
-    align-items: end;
     .swiper{
       margin: 0;
     }
@@ -234,6 +233,7 @@ export default {
     padding-left: 50px;
   }
   .right-section{
+    padding-top: 10px;
     h1{
       font-size: 2em;
     }
@@ -243,5 +243,12 @@ export default {
   }
 }
 
+
+}
+
+@media screen and (min-height: 800px){
+  .main-container .right-section{
+    padding-top: 100px;
+  }
 }
 </style>
