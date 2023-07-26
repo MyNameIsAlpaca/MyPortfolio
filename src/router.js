@@ -6,10 +6,6 @@ import AppAbout from './pages/AppAbout.vue';
 import SingleProject from './pages/SingleProject.vue';
 import AppContact from './pages/AppContact.vue';
 
-
-
-
-
 const router = createRouter({
 
   history: createWebHistory(),

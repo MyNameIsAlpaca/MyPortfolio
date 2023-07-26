@@ -5,7 +5,8 @@
     "language": ["Php", "Scss", "Html", "Laravel"],
     "type": "Back-End",
     "link": "https://github.com/MyNameIsAlpaca/laravel-dc-comics",
-    "pic": "img/DCcomics.png"
+    "pic": "img/DCcomics.png",
+    "slug": "DC-Comics"
   },
   {
     "name": "Spazio Minato",
@@ -13,7 +14,8 @@
     "language": ["Html", "Css", "Javascript"],
     "type": "Front-End",
     "link": "https://github.com/MyNameIsAlpaca/js-campominato-dom",
-    "pic": "img/spazio-minato.jpg"
+    "pic": "img/spazio-minato.jpg",
+    "slug": "Spazio-Minato"
   },
   {
     "name": "Boolando",
@@ -21,15 +23,8 @@
     "language": ["Html", "Css", "Javascript"],
     "type": "Front-End",
     "link": "https://github.com/MyNameIsAlpaca/html-css-boolando",
-    "pic": "img/zalando.png"
-  },
-  {
-    "name": "Boolando",
-    "description": "In questo progetto ho creato una vetrina per un negozio di abbigliamento.",
-    "language": ["Html", "Css", "Javascript"],
-    "type": "Front-End",
-    "link": "https://github.com/MyNameIsAlpaca/html-css-boolando",
-    "pic": "img/zalando.png"
+    "pic": "img/zalando.png",
+    "slug": "Boolando"
   },
   {
     "name": "Spotify",
@@ -37,7 +32,8 @@
     "language": ["Html", "Css"],
     "type": "Front-End",
     "link": "https://github.com/MyNameIsAlpaca/html-css-spotifyweb",
-    "pic": "img/spotify.png"
+    "pic": "img/spotify.png",
+    "slug": "Spotify"
   },
   {
     "name": "Whatsapp Web",
@@ -45,7 +41,8 @@
     "language": ["Html", "Css", "Javascript"],
     "type": "Front-End",
     "link": "https://github.com/MyNameIsAlpaca/vue-boolzapp",
-    "pic": "img/whatsapp.png"
+    "pic": "img/whatsapp.png",
+    "slug": "Whatsapp-Web"
   },
   {
     "name": "Netflix",
@@ -53,7 +50,8 @@
     "language": ["Html", "Scss", "Javascript", "VueJS"],
     "type": "Front-End",
     "link": "https://github.com/MyNameIsAlpaca/vite-boolflix",
-    "pic": "img/Netflix.png"
+    "pic": "img/Netflix.png",
+    "slug": "Netflix"
   },
   {
     "name": "Max Coach",
@@ -61,7 +59,8 @@
     "language": ["Html", "Scss", "Javascript", "VueJS"],
     "type": "Front-End",
     "link": "https://github.com/MyNameIsAlpaca/proj-html-vuejs",
-    "pic": "img/MaxCoach.png"
+    "pic": "img/MaxCoach.png",
+    "slug": "Max-Coach"
   },
   {
     "name": "BoolBnB",
@@ -69,6 +68,7 @@
     "language": ["Html", "Scss", "Javascript", "VueJS", "Php", "Laravel"],
     "type": "FullStack",
     "link": ["https://github.com/MyNameIsAlpaca/BoolBnB", "https://github.com/SimoneFerrini/team_5_project"],
-    "pic": "img/boolbnb.png"
+    "pic": "img/boolbnb.png",
+    "slug": "BoolBnB"
   }
 ]
