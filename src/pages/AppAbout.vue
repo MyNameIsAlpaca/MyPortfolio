@@ -44,7 +44,7 @@ export default {
             </h1>
           </div>
           <div class="desc">
-            <span>Nato il 3 maggio 1998 nella provincia di sondrio ho sempre avuto una passione innata per la tecnologia, in particolare per l'informatica. 
+            <span>Nato il 3 maggio 1998 nella provincia di Sondrio ho sempre avuto una passione innata per la tecnologia, in particolare per l'informatica. 
             </span>
             <span>
               Ho sempre tenuto questa mia passione come un semplice hobby da coltivare e migliorare nel tempo libero ma il mio sogno è quello di portare questa mia passione in un ambito lavorativo dove poter crescere e migliorare giorno dopo giorno.
