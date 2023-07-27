@@ -26,60 +26,56 @@ export default{
 </script>
 
 <template>
-  <div class="card">
-    <img class="card-img-top" :src="project.pic" alt="Card image cap">
-    <div class="type">
-      {{ project.type }}
+
+  <div class="container-card">
+    <div class="img-container">
+      <img class="card-img-top" :src="project.pic" alt="Card image cap">
     </div>
-    <div class="card-body">
+    <div class="info">
       <h5 class="card-title">{{ project.name }}</h5>
-      <div class="language">
+      <div class="language d-flex gap-2">
         <span class="single-language" v-for="language in project.language">{{ language }}</span>
       </div>
       <p class="card-text">{{ project.description }}</p>
-      <div class="button d-flex justify-content-between">
+    </div>
+    <div class="button d-flex justify-content-between">
         <a :href="project.link" class="button"><i class="fa-solid fa-code"></i></a>
         <a href="#" class="button"><i class="fa-solid fa-eye"></i></a>
       </div>
-    </div>
   </div>
+
 </template>
 
 <style lang="scss">
-.card{
-  width: 360px;
-  position: relative;
-  cursor:default;
-}
-
-.card-text{
-  height: 130px;
-  overflow: auto;
-  margin: 5px 0px 5px 0px;
-  padding: 5px;
-  background-color: rgb(190, 190, 190);
-  border-radius: 5px;
-}
-.language{
-  display: flex;
-  gap: 5px;
-  overflow: auto;
-  .single-language{
-  font-size: 0.8em;
-  background-color: rgba(20, 18, 156, 0.507);
-  color: white;
-  padding: 2px;
-  border-radius: 10px;
+.img-container{
+  img{
+    border-radius: 10px;
   }
 }
-.type{
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.685);
-  border-radius: 5px;
-  padding: 2px;
-  font-size: 0.8em;
-  top: 10px;
-  left: 10px;
-  color: white;
+.info{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .card-title{
+    text-align: center;
+  }
+  .card-text{
+    max-height: 100px;
+    overflow: auto;
+  }
+  .language{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.button{
+  padding-top: 10px;
+}
+.container-card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 </style>

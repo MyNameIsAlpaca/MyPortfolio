@@ -22,7 +22,7 @@ export default {
 
 <template>
   <div class="project-container container">
-    <div v-for="project in projects" :key="project.id">
+    <div class="single-project" v-for="project in projects" :key="project.id">
       <AppProjectCard :project="project"></AppProjectCard>
     </div>
   </div>
@@ -31,9 +31,28 @@ export default {
 <style lang="scss" scoped>
 
 .project-container{
-  padding-top: 70px;
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 100px;
+  justify-content: space-between;
+}
+
+.single-project{
+  max-width: 500px;
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .project-container{
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+  .single-project{
+
+  }
 }
 </style>
