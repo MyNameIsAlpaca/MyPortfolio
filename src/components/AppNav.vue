@@ -21,6 +21,12 @@ export default {
       <router-link class="pc" :to="{ name: 'projects' }"><button><span class="box">Progetti</span></button></router-link>
       <router-link class="pc" :to="{ name: 'contact' }"><button><span class="box">Contatti</span></button></router-link>
     </div>
+    <div class="mid-nav-hide">
+      <router-link :to="{ name: 'home' }"><button><span class="mobile"><i class="fa-solid fa-house"></i></span></button></router-link>
+      <router-link :to="{ name: 'about-me' }"><button><span class="mobile"><i class="fa-solid fa-user"></i></span></button></router-link>
+      <router-link :to="{ name: 'projects' }"><button><span class="mobile"><i class="fa-solid fa-bars-progress"></i></span></button></router-link>
+      <router-link :to="{ name: 'contact' }"><button><span class="mobile"><i class="fa-solid fa-phone"></i></span></button></router-link>
+    </div>
     <div class="right-nav">
       &lt;/HelloWorld!>
     </div>
@@ -28,7 +34,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.box{
+
+.mid-nav-hide{
+  display: none;
+}
+.box, .mobile{
   color: white;
 }
 .router-link-active button span{
@@ -137,6 +147,12 @@ export default {
 
 @media screen and (max-width: 992px) {
 
+  .mid-nav-hide{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .left-nav, .right-nav{
     display: none;
   }
@@ -148,7 +164,7 @@ export default {
     position: fixed;
     z-index: 2;
     .mid-nav{
-      flex-direction: column;
+      display: none;
       .box{
         width: 100px;
         margin: 0;

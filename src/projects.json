@@ -1,5 +1,50 @@
 [
   {
+    "name": "BoolBnB",
+    "description": "In questo progetto io e altri miei compagni di corso abbiamo lavorato in team per creare un sito web completo FullStack ispirato ad airBnB, in questo sito le persone hanno la possibilità di registrarsi e caricare le proprie strutture da poter mettere in affitto con una localizzazione precisa utilizzando delle chiamate API di Tom Tom, un utente interessato può anche contattare il proprietario della casa tramite messaggio.",
+    "language": ["Html", "Scss", "Javascript", "VueJS", "Php", "Laravel"],
+    "type": "FullStack",
+    "link": ["https://github.com/MyNameIsAlpaca/BoolBnB", "https://github.com/SimoneFerrini/team_5_project"],
+    "pic": "img/boolbnb.png",
+    "slug": "BoolBnB"
+  },
+  {
+    "name": "Max Coach",
+    "description": "In questo progetto ho creato la vetrina di un azienda che vende corsi a distanza",
+    "language": ["Html", "Scss", "Javascript", "VueJS"],
+    "type": "Front-End",
+    "link": "https://github.com/MyNameIsAlpaca/proj-html-vuejs",
+    "pic": "img/MaxCoach.png",
+    "slug": "Max-Coach"
+  },
+  {
+    "name": "Netflix",
+    "description": "In questo progetto ho ricreato la famosa web app Netflix, utilizzando le chiamate API per accedere alle varie informazioni di film e serie tv, con la funzione di poter cercare determinati titoli.",
+    "language": ["Html", "Scss", "Javascript", "VueJS"],
+    "type": "Front-End",
+    "link": "https://github.com/MyNameIsAlpaca/vite-boolflix",
+    "pic": "img/Netflix.png",
+    "slug": "Netflix"
+  },
+  {
+    "name": "Spotify",
+    "description": "In questo progetto ho ricreato l'interfaccia grafica della Web App Spotify.",
+    "language": ["Html", "Css"],
+    "type": "Front-End",
+    "link": "https://github.com/MyNameIsAlpaca/html-css-spotifyweb",
+    "pic": "img/spotify.png",
+    "slug": "Spotify"
+  },
+  {
+    "name": "Whatsapp Web",
+    "description": "In questo progetto ho ricreato la famosa web app Whatsapp, con la funzione di inviare e ricevere messaggi implementando anche la dark-mode.",
+    "language": ["Html", "Css", "Javascript"],
+    "type": "Front-End",
+    "link": "https://github.com/MyNameIsAlpaca/vue-boolzapp",
+    "pic": "img/whatsapp.png",
+    "slug": "Whatsapp-Web"
+  },
+  {
     "name": "DC Comics",
     "description": "In questo progetto ho riprodotto il sito della DC comics in varie sezioni, dove è possibile anche caricare un proprio fumetto e visualizzare gli altri già caricati.",
     "language": ["Php", "Scss", "Html", "Laravel"],
@@ -25,50 +70,5 @@
     "link": "https://github.com/MyNameIsAlpaca/html-css-boolando",
     "pic": "img/zalando.png",
     "slug": "Boolando"
-  },
-  {
-    "name": "Spotify",
-    "description": "In questo progetto ho ricreato l'interfaccia grafica della Web App Spotify.",
-    "language": ["Html", "Css"],
-    "type": "Front-End",
-    "link": "https://github.com/MyNameIsAlpaca/html-css-spotifyweb",
-    "pic": "img/spotify.png",
-    "slug": "Spotify"
-  },
-  {
-    "name": "Whatsapp Web",
-    "description": "In questo progetto ho ricreato la famosa web app Whatsapp, con la funzione di inviare e ricevere messaggi implementando anche la dark-mode.",
-    "language": ["Html", "Css", "Javascript"],
-    "type": "Front-End",
-    "link": "https://github.com/MyNameIsAlpaca/vue-boolzapp",
-    "pic": "img/whatsapp.png",
-    "slug": "Whatsapp-Web"
-  },
-  {
-    "name": "Netflix",
-    "description": "In questo progetto ho ricreato la famosa web app Netflix, utilizzando le chiamate API per accedere alle varie informazioni di film e serie tv, con la funzione di poter cercare determinati titoli.",
-    "language": ["Html", "Scss", "Javascript", "VueJS"],
-    "type": "Front-End",
-    "link": "https://github.com/MyNameIsAlpaca/vite-boolflix",
-    "pic": "img/Netflix.png",
-    "slug": "Netflix"
-  },
-  {
-    "name": "Max Coach",
-    "description": "In questo progetto ho creato la vetrina di un azienda che vende corsi a distanza",
-    "language": ["Html", "Scss", "Javascript", "VueJS"],
-    "type": "Front-End",
-    "link": "https://github.com/MyNameIsAlpaca/proj-html-vuejs",
-    "pic": "img/MaxCoach.png",
-    "slug": "Max-Coach"
-  },
-  {
-    "name": "BoolBnB",
-    "description": "In questo progetto io e altri miei compagni di corso abbiamo lavorato in team per creare un sito web completo FullStack ispirato ad airBnB, in questo sito le persone hanno la possibilità di registrarsi e caricare le proprie strutture da poter mettere in affitto con una localizzazione precisa utilizzando delle chiamate API di Tom Tom, un utente interessato può anche contattare il proprietario della casa tramite messaggio.",
-    "language": ["Html", "Scss", "Javascript", "VueJS", "Php", "Laravel"],
-    "type": "FullStack",
-    "link": ["https://github.com/MyNameIsAlpaca/BoolBnB", "https://github.com/SimoneFerrini/team_5_project"],
-    "pic": "img/boolbnb.png",
-    "slug": "BoolBnB"
   }
 ]

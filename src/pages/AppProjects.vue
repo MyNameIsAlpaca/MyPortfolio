@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="project-container container">
     <div v-for="project in projects" :key="project.id">
       <AppProjectCard :project="project"></AppProjectCard>
     </div>
@@ -30,5 +30,10 @@ export default {
 
 <style lang="scss" scoped>
 
-
+.project-container{
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 </style>

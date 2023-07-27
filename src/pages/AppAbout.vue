@@ -51,7 +51,7 @@ export default {
             </span>
             <span>Ciò che mi affascina maggiormente della programmazione è il suo carattere dinamico e la sua costante evoluzione, che ti stimola a migliorare sempre di più e ti permette di creare dal nulla progetti sempre più grandi.</span>
             <span>Uno dei tratti distintivi della mia personalità che preferisco è la <strong>curiosità</strong>, questa continua sete di conoscenza mi spinge ogni giorno a domandarmi cosa c'è dietro ai programmi e siti web che utilizziamo tutti i giorni, quale lavoro è stato fatto per creare e migliorare sempre di più un determinato prodotto.</span>
-            <span>Sperando un giorno di poter prendere anche io parte ad un grande progetto che lascerà il segno.</span>
+            <span class="mb-4">Sperando un giorno di poter prendere anche io parte ad un grande progetto che lascerà il segno.</span>
           </div>
         </div>
       </div>
@@ -229,7 +229,6 @@ export default {
     .desc{
       margin: auto;
       max-width: 80%;
-      padding-left: 100px;
       font-size: 1em;
       span{
     }

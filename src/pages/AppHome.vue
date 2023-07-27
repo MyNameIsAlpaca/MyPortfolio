@@ -42,105 +42,34 @@ export default {
 
 <template>
   <div class="background">
-    <div class="container-xl main-container">
-      <div class="left-section">
-        <div class="left-section-container">
-          <div class="image-container">
-            <img src="/img/curriculum_foto_def.jpg" alt="Immagine di profilo">
-          </div>
-          <h3 class="pt-3"><em>Conoscenze:</em></h3>
-          <swiper :grabCursor="true" :effect="'creative'" :creativeEffect="{ prev: { shadow: true, translate: [0, 0, -400],}, next: { translate: ['100%', 0, 0],},}" :modules="modules" class="mySwiper">
-            <swiper-slide><i class="fa-brands fa-html5"></i><span class="swiper_name">Html</span> <em class="swipe_arrow">swipe <i class="fa-solid fa-arrow-right"></i></em></swiper-slide>
-            <swiper-slide><i class="fa-brands fa-css3-alt"></i><span class="swiper_name">Css</span></swiper-slide>
-            <swiper-slide><i class="fa-brands fa-js"></i><span class="swiper_name">Javascript</span></swiper-slide>
-            <swiper-slide><i class="fa-brands fa-bootstrap"></i><span class="swiper_name">Bootstrap</span></swiper-slide>
-            <swiper-slide><i class="fa-brands fa-vuejs"></i><span class="swiper_name">VueJs</span></swiper-slide>
-            <swiper-slide><i class="fa-brands fa-php"></i><span class="swiper_name">Php</span></swiper-slide>
-            <swiper-slide><i class="fa-brands fa-laravel"></i><span class="swiper_name">Laravel</span></swiper-slide>
-          </swiper> 
-        </div>
+    
+    <div class="main-container">
+      <div class="image-container">
+        <img src="/img/curriculum_foto_def.jpg" alt="Immagine di profilo">
       </div>
-      <div class="right-section">
-        <h1>Gabriele Saragosa</h1>
-        <span>- Web Developer Junior -</span>
+      <h3 class="pt-3"><em>Conoscenze:</em></h3>
+      <swiper :grabCursor="true" :effect="'creative'" :creativeEffect="{ prev: { shadow: true, translate: [0, 0, -400],}, next: { translate: ['100%', 0, 0],},}" :modules="modules" class="mySwiper">
+        <swiper-slide><i class="fa-brands fa-html5"></i><span class="swiper_name">Html</span> <em class="swipe_arrow">swipe <i class="fa-solid fa-arrow-right"></i></em></swiper-slide>
+        <swiper-slide><i class="fa-brands fa-css3-alt"></i><span class="swiper_name">Css</span></swiper-slide>
+        <swiper-slide><i class="fa-brands fa-js"></i><span class="swiper_name">Javascript</span></swiper-slide>
+        <swiper-slide><i class="fa-brands fa-bootstrap"></i><span class="swiper_name">Bootstrap</span></swiper-slide>
+        <swiper-slide><i class="fa-brands fa-vuejs"></i><span class="swiper_name">VueJs</span></swiper-slide>
+        <swiper-slide><i class="fa-brands fa-php"></i><span class="swiper_name">Php</span></swiper-slide>
+        <swiper-slide><i class="fa-brands fa-laravel"></i><span class="swiper_name">Laravel</span></swiper-slide>
+      </swiper> 
+      <div class="info-section">
+            <h1 id="name">Gabriele Saragosa</h1>
+            <span id="sub" class="sub">- Web Developer Junior -</span>
       </div>
     </div>
-    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-.background{
-  background-image: url(/img/background.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  .main-container{
-    padding-top: 70px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .left-section{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 100px;
-    width: 50%;
-    height: calc(100vh - 70px);
-    flex-direction: column;
-    .left-section-container{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .image-container{
-      width: 200px;
-      img{
-        border-radius: 50%;
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-  .right-section{
-    height: calc(100vh - 70px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h1{
-      font-size: 3em;
-      color: lightgray;
-      text-shadow: 1px 1px 2px black;
-    }
-    span{
-      text-shadow: 1px 1px 2px black;
-      width: fit-content;
-      overflow: hidden;
-      white-space: nowrap;
-      font-size: 1.5rem;
-      margin: 0 auto;
-      font-family: "Courier New";
-      animation: typing 3s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
-      text-align: center;
-    }
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    }
-    @keyframes blink {
-      50% {
-        border-color: transparent;
-    }
-  }
-}
-/* for swiper */
-.swiper {
-  margin-top: 10px;
+
+.swiper{
   width: 200px;
-  height: 100px;
+  min-height: 100px;
 }
 
 .swiper-slide {
@@ -192,63 +121,75 @@ export default {
   border: 5px solid #e4453a;
 }
 
-@media screen and (max-width: 992px) {
-  .main-container{
-    flex-direction: column;
-    padding-left: 150px;
+.background{
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-container{
+  display: flex;
+  padding-top: 100px;
+  height: calc(100vh - 130px);
+  flex-direction: column;
+  align-items: center;
+  .image-container{
+      width: 200px;
+      padding-bottom: 20px;
+      img{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+      }
+    
   }
-  .left-section{
-    width: 100%;
-    height: fit-content;
-  }
-  .right-section{
-    width: 100%;
-    height: fit-content;
-    align-items: center;
-  }
+  .info-section{
+      padding-top: 70px;
+      display: flex;
+      flex-direction: column;
+      h1{
+        font-size: 3em;
+        color: lightgray;
+        text-shadow: 1px 1px 2px black;
+      }
+      .sub{
+        text-shadow: 1px 1px 2px black;
+        width: fit-content;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 1.5rem;
+        margin: 0 auto;
+        font-family: "Courier New";
+        animation: typing 3s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+        text-align: center;
+      }
+  
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+      }
+    }
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
-  .main-container{
-    gap: 100px;
+  #name{
+    font-size: 2em;
+    text-align: center;
   }
-  .left-section{
-
-    gap: 10px;
-    .image-container{
-      width: 150px;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-
-  .left-section{
-    display: flex;
-    .swiper{
-      margin: 0;
-    }
-  }
-  .main-container{
-    padding-left: 50px;
-  }
-  .right-section{
-    padding-top: 10px;
-    h1{
-      font-size: 2em;
-    }
-    span{
-      font-size: 1em;
-    }
+  #sub{
+    font-size: 1em;
   }
 }
 
 
-}
-
-@media screen and (min-height: 800px){
-  .main-container .right-section{
-    padding-top: 100px;
-  }
-}
 </style>

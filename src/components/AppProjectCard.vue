@@ -49,10 +49,16 @@ export default{
 .card{
   width: 360px;
   position: relative;
+  cursor:default;
 }
+
 .card-text{
   height: 130px;
   overflow: auto;
+  margin: 5px 0px 5px 0px;
+  padding: 5px;
+  background-color: rgb(190, 190, 190);
+  border-radius: 5px;
 }
 .language{
   display: flex;
