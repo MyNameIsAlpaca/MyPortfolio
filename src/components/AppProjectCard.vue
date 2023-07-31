@@ -40,7 +40,7 @@ export default{
     </div>
     <div class="button d-flex justify-content-between">
         <a :href="project.link" class="button"><i class="fa-solid fa-code"></i></a>
-        <a href="#" class="button"><i class="fa-solid fa-eye"></i></a>
+        <!-- <a href="#" class="button"><i class="fa-solid fa-eye"></i></a> -->
       </div>
   </div>
 

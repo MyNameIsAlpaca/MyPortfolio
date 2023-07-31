@@ -4,7 +4,7 @@
     "description": "In questo progetto io e altri miei compagni di corso abbiamo lavorato in team per creare un sito web completo FullStack ispirato ad airBnB, in questo sito le persone hanno la possibilità di registrarsi e caricare le proprie strutture da poter mettere in affitto con una localizzazione precisa utilizzando delle chiamate API di Tom Tom, un utente interessato può anche contattare il proprietario della casa tramite messaggio.",
     "language": ["Html", "Scss", "Javascript", "VueJS", "Php", "Laravel"],
     "type": "FullStack",
-    "link": ["https://github.com/MyNameIsAlpaca/BoolBnB", "https://github.com/SimoneFerrini/team_5_project"],
+    "link": "https://github.com/MyNameIsAlpaca/BoolBnB",
     "pic": "img/boolbnb.png",
     "slug": "BoolBnB"
   },

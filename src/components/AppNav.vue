@@ -45,6 +45,7 @@ export default {
   color: red;
 }
 .nav{
+  padding: 0px 10px 0px 10px;
   width: 100vw;
   height: 70px;
   background: transparent;
@@ -136,6 +137,7 @@ export default {
 
 @media screen and (max-width: 1200px) {
   .nav{
+    padding: 0;
     .left-nav, .right-nav {
       font-size: 1em
     }
