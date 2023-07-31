@@ -20,26 +20,28 @@ export default {
 </script>
 
 <template>
-  <h1 class="title">I miei progetti</h1>
-  <div class="project-container container">
-    <div class="single-project" v-for="project in projects" :key="project.id">
-      <AppProjectCard :project="project"></AppProjectCard>
+  <div class="container">
+    <h1 class="title">I miei progetti</h1>
+    <div class="project-container container">
+      <div class="single-project" v-for="project in projects" :key="project.id">
+        <AppProjectCard :project="project"></AppProjectCard>
+      </div>
     </div>
-  </div>
-  <div class="container my-4">
-    <div class="spinner-container">
-      <div class="spinner">
-      <div class="spinner">
+    <div class="container my-4">
+      <div class="spinner-container">
+        <div class="spinner">
         <div class="spinner">
           <div class="spinner">
             <div class="spinner">
-                <div class="spinner"></div>
+              <div class="spinner">
+                  <div class="spinner"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-   </div>
+     </div>
+    </div>
   </div>
 </template>
 
