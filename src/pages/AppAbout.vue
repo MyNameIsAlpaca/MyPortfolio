@@ -20,6 +20,9 @@ export default {
 
 <template>
   <div class="background">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
     <div class="container-lg">
       <div class="main-container">
         <div class="change-text">
@@ -61,9 +64,38 @@ export default {
 
 <style lang="scss" scoped>
 .background{
-  background-color: black;
+  .bg {
+  animation:slide 6s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #231F20 50%, #1722c5 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:8s;
+}
+
+.bg3 {
+  animation-duration:10s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 130px);
   .main-container{
     padding-top: 100px;
     height: 100vh;

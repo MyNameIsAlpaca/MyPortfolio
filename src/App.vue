@@ -1,6 +1,7 @@
 <script>
 import AppNav from './components/AppNav.vue'; 
 
+
 export default {
   name: "App",
   data() {
@@ -8,9 +9,9 @@ export default {
 
     };
   },
-  components: { 
-      AppNav,
-    }
+  components: {
+    AppNav
+}
 }
 
 </script>

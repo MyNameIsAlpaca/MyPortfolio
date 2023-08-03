@@ -20,32 +20,71 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <h1 class="title">I miei progetti</h1>
-    <div class="project-container container">
-      <div class="single-project" v-for="project in projects" :key="project.id">
-        <AppProjectCard :project="project"></AppProjectCard>
+  <div class="background">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="container">
+      <h1 class="title">I miei progetti</h1>
+      <div class="project-container container">
+        <div class="single-project" v-for="project in projects" :key="project.id">
+          <AppProjectCard :project="project"></AppProjectCard>
+        </div>
       </div>
-    </div>
-    <div class="container my-4">
-      <div class="spinner-container">
-        <div class="spinner">
-        <div class="spinner">
+      <div class="container my-4">
+        <div class="spinner-container">
+          <div class="spinner">
           <div class="spinner">
             <div class="spinner">
               <div class="spinner">
-                  <div class="spinner"></div>
+                <div class="spinner">
+                    <div class="spinner"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-     </div>
+       </div>
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+
+.background{
+  .bg {
+  animation:slide 6s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #231F20 50%, #56c018 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:8s;
+}
+
+.bg3 {
+  animation-duration:10s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+}
 
 .title{
   font-size: 4em;
@@ -66,12 +105,8 @@ export default {
 
 
 .single-project{
-  max-width: 500px;
-  border: 5px solid white;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgb(0, 0, 0);
   opacity: 0;
+  max-width: 100%;
 }
 
 .single-project:nth-child(1){
@@ -128,7 +163,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .project-container{
     justify-content: center;
   }
