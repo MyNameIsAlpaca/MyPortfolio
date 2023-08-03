@@ -161,7 +161,7 @@ export default {
 
 .main-container{
   display: flex;
-  padding-top: 100px;
+  padding-top: 180px;
   height: calc(100vh - 130px);
   flex-direction: column;
   align-items: center;
@@ -212,6 +212,12 @@ export default {
     }
     }
     
+}
+
+@media screen and (max-width: 990px) {
+  .main-container{
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
