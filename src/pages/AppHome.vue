@@ -2,11 +2,13 @@
 
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
-import 'swiper/css/effect-creative';
-
 import 'swiper/css';
 
-import { EffectCreative } from 'swiper';
+import 'swiper/css/effect-creative';
+
+import '../style.scss';
+
+import { EffectCreative } from 'swiper/modules';
 
 export default {
   name: "AppHome",
