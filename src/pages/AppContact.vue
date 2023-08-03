@@ -45,7 +45,8 @@ export default {
       <div class="containerForm">
         <div class="left-side">
           <form class="formContainer" @submit.prevent="sendEmail">
-            <h2>Get in Touch!</h2>
+            <hr class="hide">
+            <em>Scrivimi un messaggio!</em>
             <label>Nome</label>
             <input class="info"
               type="text"
@@ -95,7 +96,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+.hide{
+  display: none;
+}
 .right-side{
   display: flex;
   flex-direction: column;
@@ -192,6 +195,9 @@ export default {
 }
 
 @media screen and (max-width: 990px){
+  .hide{
+    display: block;
+  }
   .containerForm{
     flex-direction: column-reverse;
     margin-bottom: 50px;
