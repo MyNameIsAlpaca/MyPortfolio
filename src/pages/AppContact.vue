@@ -46,7 +46,7 @@ export default {
         <div class="left-side">
           <form class="formContainer" @submit.prevent="sendEmail">
             <hr class="hide">
-            <em>Scrivimi un messaggio!</em>
+            <em class="hide">Scrivimi un messaggio!</em>
             <label>Nome</label>
             <input class="info"
               type="text"
