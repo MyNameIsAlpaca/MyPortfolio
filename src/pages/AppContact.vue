@@ -128,7 +128,7 @@ export default {
   display: flex;
   padding: 20px;
   background-color: #231f20a2;
-  margin-top: 70px;
+  margin-top: 200px;
   border-radius: 15px;
   gap: 100px;
 }
@@ -157,6 +157,7 @@ export default {
     border: 0;
     border-bottom: 1px solid white;
     border-left: 1px solid white;
+    color: white;
   }
 }
 
