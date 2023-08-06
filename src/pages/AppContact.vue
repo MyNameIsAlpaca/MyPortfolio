@@ -6,7 +6,8 @@ export default {
     return {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      messageSend: false,
     };
   },
   created() {
@@ -19,7 +20,7 @@ export default {
         'M36i5HiTnxK88OXeD', {
           name: this.name,
           email: this.email,
-          message: this.message
+          message: this.message,
         })
 
       } catch(error) {
@@ -29,6 +30,7 @@ export default {
       this.name = ''
       this.email = ''
       this.message = ''
+      this.messageSend = true
     },
   },
   components: {
@@ -71,7 +73,10 @@ export default {
               placeholder="  Inserisci un messaggio"
             ></textarea>
     
-            <input class="btn btn-secondary" type="submit" value="Send">
+            <input v-if="!messageSend" class="btn btn-secondary" type="submit" value="Send">
+            <div v-else class="alert alert-success" role="alert">
+              Grazie! Messaggio inviato.
+            </div>
           </form>
         </div>
         <div class="right-side">
