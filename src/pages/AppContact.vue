@@ -56,6 +56,7 @@ export default {
               v-model="name"
               name="name"
               placeholder="Inserisci il tuo nome"
+              required
             >
             <label>Email</label>
             <input class="info"
@@ -63,6 +64,7 @@ export default {
               v-model="email"
               name="email"
               placeholder="Inserisci la tua email"
+              required
             >
             <label>Messaggio</label>
             <textarea
@@ -71,6 +73,7 @@ export default {
               v-model="message"
               cols="30" rows="5"
               placeholder="  Inserisci un messaggio"
+              required
             ></textarea>
     
             <input v-if="!messageSend" class="btn btn-secondary" type="submit" value="Send">
