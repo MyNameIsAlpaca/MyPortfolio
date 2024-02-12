@@ -52,7 +52,12 @@ export default {
       </div>
       <h3 class="pt-3"><em>Conoscenze:</em></h3>
       <swiper :grabCursor="true" :effect="'creative'" :creativeEffect="{ prev: { shadow: true, translate: [0, 0, -400],}, next: { translate: ['100%', 0, 0],},}" :modules="modules" class="mySwiper">
-        <swiper-slide><i class="fa-brands fa-html5"></i><span class="swiper_name">Html</span> <em class="swipe_arrow">swipe <i class="fa-solid fa-arrow-right"></i></em></swiper-slide>
+        <swiper-slide><i class="fa-brands fa-angular"></i><span class="swiper_name">Angular</span> <em class="swipe_arrow">swipe <i class="fa-solid fa-arrow-right"></i></em></swiper-slide>
+        <swiper-slide><i class="fa-brands fa-react"></i><span class="swiper_name">React</span></swiper-slide>
+        <swiper-slide><i class="fa-solid fa-wrench"></i><span class="swiper_name">ASP.NET</span></swiper-slide>
+        <swiper-slide><i class="fa-solid fa-screwdriver-wrench"></i><span class="swiper_name">.Net</span></swiper-slide>
+        <swiper-slide><span class="swiper_name">C#</span></swiper-slide>
+        <swiper-slide><i class="fa-brands fa-html5"></i><span class="swiper_name">Html</span></swiper-slide>
         <swiper-slide><i class="fa-brands fa-css3-alt"></i><span class="swiper_name">Css</span></swiper-slide>
         <swiper-slide><i class="fa-brands fa-js"></i><span class="swiper_name">Javascript</span></swiper-slide>
         <swiper-slide><i class="fa-brands fa-bootstrap"></i><span class="swiper_name">Bootstrap</span></swiper-slide>
@@ -134,8 +139,8 @@ export default {
 }
 
 .swiper-slide:nth-child(3n) {
-  background-color: darken(#cbb132, 10%);
-  border: 5px solid #cbb132;
+  background-color: darken(#197abe, 10%);
+  border: 5px solid #197abe;
 }
 
 .swiper-slide:nth-child(4n) {
@@ -144,18 +149,43 @@ export default {
 }
 
 .swiper-slide:nth-child(5n) {
-  background-color: darken(#3eaf7c, 10%);
-  border: 5px solid #3eaf7c;
+  background-color: darken(#9d4cb2, 10%);
+  border: 5px solid #9d4cb2;
 }
 
 .swiper-slide:nth-child(6n) {
-  background-color: darken(#7175aa, 10%);
-  border: 5px solid #7175aa;
+  background-color: darken(#f16a30, 10%);
+  border: 5px solid #f16a30;
 }
 
 .swiper-slide:nth-child(7n) {
-  background-color: darken(#e4453a, 10%);
-  border: 5px solid #e4453a;
+  background-color: darken(#306af1, 10%);
+  border: 5px solid #306af1;
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: darken(#f7e025, 10%);
+  border: 5px solid #f7e025;
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: darken(#8011f5, 10%);
+  border: 5px solid #8011f5;
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: darken(#42b883, 10%);
+  border: 5px solid #42b883;
+}
+
+.swiper-slide:nth-child(11n) {
+  background-color: darken(#7b7fb5, 10%);
+  border: 5px solid #7b7fb5;
+}
+
+.swiper-slide:nth-child(12n) {
+  background-color: darken(#d91c17, 10%);
+  border: 5px solid #d91c17;
 }
 
 .background{
