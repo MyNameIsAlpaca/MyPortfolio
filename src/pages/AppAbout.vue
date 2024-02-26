@@ -40,8 +40,8 @@ export default {
         <div class="info">
           <div class="title-container">
             <h1>
-              <span>Who&nbsp;</span>
-              <span>Is&nbsp;</span>
+              <span>Chi&nbsp;</span>
+              <span>è&nbsp;</span>
               <span>Gabriele</span>
               <span>?</span>
             </h1>
